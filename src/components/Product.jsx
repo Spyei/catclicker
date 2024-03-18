@@ -14,7 +14,7 @@ export default function Product({ product, points, onBuy, type })  {
             <span className="text-start">{product.cooldown} Milisegundos de cooldown</span>
           </>
         ) : (
-          <span><strong>{product.points}</strong> ponto{product.points === 1 ? null : "s"} a cada {product.cooldown} milisegundos</span>
+          <span><strong>{product.points}</strong> ponto{product.points === 1 ? "" : "s"} a cada {product.cooldown} milisegundos</span>
         )
       }
     </button>
